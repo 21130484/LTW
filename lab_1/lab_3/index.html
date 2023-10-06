@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <h1>Header section</h1>
+        <p>900px - 120px</p>
+    </div>
+
+    <div id="company-img">
+        <h1>Company image</h1>
+        <p>900px - 400px</p>
+        <p>designed by - gdatamart.com</p>
+    </div>
+
+    <div id="container">
+        <h1>Our Service</h1>
+        <div class="container-list-item">
+            <div class="container-item">
+                <p>services</p>
+                <p>width: 180px</p>
+                <p>height: 220px</p>
+            </div>
+            <div class="container-item">
+                <p>services</p>
+            </div>
+            <div class="container-item">
+                <p>services</p>
+            </div>
+            <div class="container-item"></div>
+            <div class="container-item"></div>
+            <div class="container-item"></div>
+        </div>
+    </div>
+    <div id="footer-section">
+        <h1>Footer section</h1>
+        <p>900px - 120px</p>
+    </div>
+</div>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #main {
+        width: 900px;
+        margin: 0 auto;
+    }
+    #header {
+        height: 120px;
+        width: 900px;
+        background-color: #C4996C;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #000;
+    }
+    #header h1, #header p {
+        margin: 5px 0px;
+    }
+    #header p {
+        font-size: 22px;
+    }
+
+    #company-img {
+        margin: 15px 0px;
+        background-color: #ccc;
+        width: 900px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: #fff;
+        border: 1px solid #000;
+    }
+
+    #container {
+        width: 900px;
+    }
+
+    #container h1 {
+        text-align: center;
+    }
+
+    #company-img p{
+        margin-top: 40px;
+        font-size: 22px;
+    }
+    .container-list-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-item {
+        width: 180px;
+        height: 220px;
+        background-color: #ccc;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 2px solid #000;
+    }
+    .container-item p:first-child {
+        margin-bottom: 20px;
+        margin-top: 70px;
+        font-weight: 600;
+    }
+    .container-item p {
+        font-size: 24px;
+        color: #fff;
+
+    }
+
+    #footer-section {
+        background-color: #115D7F;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 900px;
+        height: 120px;
+        border: 1px solid #000;
+    }
+    #footer-section h1 , #footer-section p {
+        margin-top: 22px;
+    }
+    #footer-section p {
+        font-size: 22px;
+    }
+</style>
+</html>

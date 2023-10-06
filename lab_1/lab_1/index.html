@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <thead>
+           <th colspan="2"><h1>PROCESS LAYOUT EXAMPLE</h1></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li><b>Main Menu</b></li>
+                        <li>Link one</li>
+                        <li>Link two</li>
+                        <li>Link three</li>
+                        <li>Link four</li>
+                    </ul>
+                </td>
+                <td>This is an example layout using the tables</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="2">www.Example of layout using tables.com</td></tr>
+        </tfoot>
+    </table>
+</body>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    li {
+        list-style-type: none;
+     }
+    table {
+        width: 100%;
+        border : 3px solid #000;
+    }
+    tr, td, th {
+        border: 1px solid #000;
+    }
+    table thead th {
+        text-align: left;
+        background-color: #ccc;
+        padding-bottom: 30px;
+    }
+    table tbody tr {
+        height: 600px;
+    }
+    table tbody tr td:first-child {
+        background-color: #FFFF99;
+    }
+    table tbody td {
+        vertical-align: top;
+    }
+
+    table tfoot td {
+        padding: 5px 0px;
+        text-align: center;
+        background-color: #ccc;
+    }
+</style>
+</html>

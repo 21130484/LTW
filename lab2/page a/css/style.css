@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ID */
+#section_normal_1 {
+    height: 80px;
+    border-bottom: 4px solid #D9D9D9;
+}
+
+#section_normal_1 .header_style .alpha {
+    float: left;
+    padding-top: 16px;
+}
+
+#section_normal_1 .header_style .omega {
+    float: right;
+    padding-top: 16px;
+}
+
+#section_normal_1 .header_style a {
+    float: right;
+    padding-left: 5px;
+}
+
+#section_normal_1 .header_style .htext_style {
+    float: left;
+    margin-top: 8px;
+    margin-right: 14px;
+    color: #acacac;
+    font-weight: 500;
+}
+
+#section_normal_4_2 {
+    background-color: #333333;
+    padding: 80px 0;
+}
+#section_normal_4_2 .container .sixteen.columns{
+    display: flex;
+}
+
+#section_normal_4_2 .container .pix_container {
+    padding-right: 52px;
+}
+
+#section_normal_4_2 .container .pix_container img{
+    width: 540px;
+}
+
+#section_normal_4_2 .container .omega > span {
+    color: #2DC1EA;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#section_normal_4_2 .container .omega .big_title {
+    font-size: 56px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 54px;
+    margin: 15px 0px;
+}
+
+#section_normal_4_2 .container .omega .normal_text {
+    color: #949494;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#section_normal_4_2 .container .omega .pix_button {
+    padding: 15px 25px;
+    background-color: #2DC0E8;
+    border-bottom: 4px solid #249ABA;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#section_normal_6 {
+    background-color: #EEEEEE;
+    border-bottom: 4px solid #D9D9D9;
+}
+
+#section_normal_6 .container .L1_style {
+    opacity: 0.6;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+#section_normal_6 .container .L2_style {
+    opacity: 0.2;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#section_normal_6 .container:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#section_normal_6 .container .alpha {
+    width: 50%;
+    float:left;
+}
+
+
+#section_normal_6 .container .box_1,
+#section_normal_6 .container .box_2
+{
+    display: flex;
+    border-bottom: 4px solid #D9D9D9;
+    margin: 50px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+#section_normal_6 .container .box_1 {
+    margin-right: 15px;
+}
+
+#section_normal_6 .container .box_2 {
+    margin-left: 15px;
+}
+
+#section_normal_6 .container .b_style {
+    display:inline-block;
+    padding: 30px 20px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+#section_normal_6 .container .b_style img {
+    border-radius: 50%;
+}
+
+#section_normal_6 .container .txt_style {
+    background-color: #fff;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+#section_normal_6 .container .txt.editContent {
+    line-height: 26px;
+    opacity: 0.6;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#section_normal_6 .container .stars_span img {
+    vertical-align: bottom;
+}
+
+#section_normal_6 .container .env_st {
+    color: #65AAFC;
+}
+
+#section_normal_6 .container .omega {
+    width: 50%;
+    display: flex;
+    float: right;
+}
+
+#section_agency_5 .container .f1_style {
+    margin-top: 70px;
+    color: #5B9A68;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#section_agency_5 .container .f2_style {
+    margin: 40px auto;
+    text-align: center;
+    width: 500px;
+    opacity: 0.5;
+}
+
+#section_agency_5 .container .second_link {
+    padding: 20px;
+    border: 3px solid #5B9A68;
+    width: 250px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#section_agency_5 .container .slow_fade {
+    color: #5B9A68;
+    font-weight: 750;
+    font-size: 18px;
+}
+
+#section_agency_5 .container .rights_st {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+#section_agency_5 .container .rights_st1 {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#section_agency_5 .container .pix_text {
+    opacity: 1;
+}
+
+#section_agency_5 .container .pixfort_st {
+    color: #5B9A68;
+    opacity: 1;
+    font-weight: 600;
+}
+
+#section_agency_5 .container .pix_inline_block {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+#section_agency_5 .container .pix_inline_block a {
+    margin-left: 8px;
+}
+
+/* Class */
+.container {
+    width: 1180px;
+    margin: 0px auto;
+}
