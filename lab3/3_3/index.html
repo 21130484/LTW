@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="main">
+    <div class="background-main">
+        <div class="login">
+            <form action="">
+                <h1 class="title">Sign In</h1>
+                <div class="input">
+                    <input type="text" placeholder="username or email">
+                </div>
+                <div class="input">
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="button">
+                    <button>SIGN IN</button>
+                </div>
+                <p>Or login with</p>
+                <div class="login-other">
+                    <a href="#"><i class="fa-brands fa-facebook-f" style="color: #2e4670;"></i></a>
+                    <a href="#"><img src="./img/icon-google.webp" alt="google"></a>
+                </div>
+
+                <div class="sign-in">
+                    <a href="#">Sign in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Tahoma, Arial, sans-serif;
+    }
+
+    .background-main {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -2;
+        background-image: url(./img/bg-01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background-main::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg,rgba(0,168,255,0.5),rgba(185,0,255,0.5));
+    }
+
+    .login {
+        width: 390px;
+        background-color: #fff;
+        padding: 30px 50px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    h1.title {
+        margin: 40px 0;
+    }
+
+    input {
+        margin-bottom: 25px;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        padding: 20px 15px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    button {
+        width: 150px;
+        border-radius: 20px;
+        border: none;
+        height: 50px;
+        background-color: #bd59d4;
+        color: #fff;
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+    p {
+        opacity: 0.5;
+        padding: 50px;
+        font-size: 14px;
+    }
+
+    .login-other {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-other a {
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 0 5px;
+    }
+
+    .sign-in {
+        margin-top: 100px;
+    }
+    .sign-in a {
+        color: #000;
+        text-decoration: none;
+    }
+    .sign-in a:hover {
+        text-decoration: underline;
+    }
+</style>
+</html>
