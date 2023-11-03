@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Giải phương trình bậc II</h1>
+    <div class="contain">
+        <label>Nhập a:</label>
+        <input type="number" id="a"><br>
+    </div>
+    <div class="contain">
+        <label>Nhập b:</label>
+        <input type="number" id="b"><br>
+    </div>
+    <div class="contain">
+        <label>Nhập c:</label>
+        <input type="number" id="c"><br>
+    </div>
+    <button onclick="calculate()">Giải phương trình</button>
+<div id="result"><p>Kết quả: </p></div>
+</body>
+<style>
+    .contain {
+        margin-bottom: 10px;
+    }
+</style>
+
+<script>
+    function calculate() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var c = document.getElementById("c").value;
+        if (a == 0) {
+            var x = -c/b;
+            document.getElementById("result").innerHTML = "Nghiệm: " + x;
+            return;
+        }
+        let delta = b * b - 4 * a * c;
+        if (delta > 0) {
+            var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            document.getElementById("result").innerHTML = "Nghiệm 1: " + x1 + ", Nghiệm 2: " + x2;
+        } else if (delta === 0) {
+            var x = -b / (2 * a);
+            document.getElementById("result").innerHTML = "Nghiệm kép: " + x;
+        } else {
+            document.getElementById("result").innerHTML = "Phương trình không có nghiệm thực.";
+        }
+    }
+</script>
+</html>

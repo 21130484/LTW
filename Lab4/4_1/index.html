@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="main">
+        <div id="background"></div>
+        <div class="contain-btn">
+            <button class="btn_color" id = "btn_black">Black</button>
+            <button class="btn_color" id = "btn_yellow">Yellow</button>
+            <button class="btn_color" id = "btn_red">Red</button>
+            <button class="btn_color" id = "btn_green">Green</button>
+            <button class="btn_color" id = "btn_blue">Blue</button>
+            <button class="btn_color" id = "btn_pink">Pink</button>
+            <button class="btn_color" id = "btn_gray">Gray</button>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #main {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    #background {
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .contain-btn {
+        margin: 0 auto;
+    }
+
+    .btn_color {
+        width: 100px;
+        padding: 10px;
+        margin: 25px 15px;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .btn_color:hover {
+        opacity: 0.6;
+    }
+
+    #btn_black {
+        background-color: Black;
+    }
+
+    #btn_yellow {
+        background-color: Yellow;
+    }
+
+    #btn_red {
+        background-color: Red;
+    }
+
+    #btn_green {
+        background-color: Green;
+    }
+
+    #btn_blue {
+        background-color: Blue;
+    }
+
+    #btn_gray {
+        background-color: Gray;
+    }
+
+    #btn_pink {
+        background-color: Pink;
+    }
+
+</style>
+<script>
+    document.getElementById("btn_black").addEventListener("click", function (){
+        document.getElementById("background").style.backgroundColor = "Black";
+    })
+    document.getElementById("btn_yellow").addEventListener("click", function (){
+        document.getElementById("background").style.backgroundColor = "Yellow";
+    })
+    document.getElementById("btn_red").addEventListener("click", function (){
+        document.getElementById("background").style.backgroundColor = "Red";
+    })
+    document.getElementById("btn_blue").addEventListener("click", function (){
+        document.getElementById("background").style.backgroundColor = "Blue";
+    })
+    document.getElementById("btn_green").addEventListener("click", function (){
+        document.getElementById("background").style.backgroundColor = "Green";
+    })
+    document.getElementById("btn_pink").addEventListener("click", function (){
+        document.getElementById("background").style.backgroundColor = "Pink";
+    })
+    document.getElementById("btn_gray").addEventListener("click", function (){
+        document.getElementById("background").style.backgroundColor = "Gray";
+    })
+</script>
+</html>

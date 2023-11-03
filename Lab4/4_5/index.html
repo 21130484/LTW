@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="main">
+  <div id="image">
+
+  </div>
+</div>
+</body>
+
+<style>
+  .main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #image {
+    width: 500px;
+    height: 500px;
+    background-image: url("./img/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    rotate: 0deg;
+  }
+</style>
+<script>
+  let rotation = 15;
+  let image = document.getElementById("image");
+
+  setInterval(function () {
+    if (rotation >= 360) {
+      rotation = 15;
+      image.style.rotate = '0deg';
+    } else {
+      image.style.rotate = `${rotation}deg`;
+      rotation = rotation + 15;
+    }
+  }, 2000);
+</script>
+</html>
